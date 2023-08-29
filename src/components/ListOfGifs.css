@@ -1,0 +1,14 @@
+.ListOfGifs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: masonry;
+  grid-gap: 16px 16px;
+  max-width: 100%;
+  margin: 0 1em;
+}
+
+.ListOfGifs-item {
+  background-color: #eee;
+  display: inline-block;
+  width: 100%;
+}
