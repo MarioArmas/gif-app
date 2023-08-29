@@ -13,8 +13,6 @@ export default function SearchResults({ params }) {
     externalRef: loading ? null : externalRef,
     once: false
   })
-
-
   
   // const handleNextPage = () => setPage(prevPage => prevPage + 1)
   // const handleNextPage = () => console.log('next page')
@@ -32,7 +30,7 @@ export default function SearchResults({ params }) {
     {loading
       ? <Loading />
       : <>
-        <h3 className="App-title">{decodeURI(keyword)}</h3>
+        <h3 className="App-title">Resultados para: {decodeURI(keyword)}</h3>
         <ListOfGifs gifs={gifs}/>
         <div id="visor" ref={externalRef}/>
       </>
